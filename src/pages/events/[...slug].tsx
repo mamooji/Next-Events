@@ -47,7 +47,6 @@ const FilteredEventsPage = () => {
     return (
       <Layout>
         <ResultsTitle message="No Event found for the chosen Event" />
-        <EventList events={filteredEvents} />
       </Layout>
     );
   }

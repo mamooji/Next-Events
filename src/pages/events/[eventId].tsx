@@ -2,6 +2,7 @@ import React from "react";
 import { useRouter } from "next/router";
 import { getEventById } from "../../../dummy-date";
 import Layout from "../../components/layout/layout";
+import ResultsTitle from "../../components/events/results-title";
 
 const EventDetailPage = () => {
   const router = useRouter();
@@ -9,9 +10,13 @@ const EventDetailPage = () => {
   const event = getEventById(eventId);
 
   if (!event) {
-    return <p>No Event Found</p>;
+    return (
+      <Layout>
+        <ResultsTitle message="No Event found for the chosen Event" />
+      </Layout>
+    );
   }
-  const { date, description, id, image, isFeatured, location, title } = event;
+  const { date, description, image, location, title } = event;
   return (
     <Layout>
       <section>
