@@ -13,8 +13,6 @@ const EventList: React.FC<Props> = ({ events }) => {
       ))}
     </ul>
   );
-
-  //   return <div>event-list</div>;
 };
 
 export default EventList;

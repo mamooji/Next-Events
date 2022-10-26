@@ -4,10 +4,7 @@ const Footer: React.FC = () => {
   return (
     <footer className="absolute bottom-0 w-full rounded-lg bg-white p-4 shadow dark:bg-gray-900 md:px-6 md:py-8">
       <div className="sm:flex sm:items-center sm:justify-between">
-        <a
-          href="https://flowbite.com/"
-          className="mb-4 flex items-center sm:mb-0"
-        >
+        <a href="/" className="mb-4 flex items-center sm:mb-0">
           <img
             src="/images/profileLOGO.png"
             className="mr-3 h-8"
@@ -28,7 +25,7 @@ const Footer: React.FC = () => {
       <hr className="my-6 border-gray-200 dark:border-gray-700 sm:mx-auto lg:my-8" />
       <span className="block text-sm text-gray-500 dark:text-gray-400 sm:text-center">
         © 2022{" "}
-        <a href="https://flowbite.com/" className="hover:underline">
+        <a href="/" className="hover:underline">
           KreaM™
         </a>
         . All Rights Reserved.
